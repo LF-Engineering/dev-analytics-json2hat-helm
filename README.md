@@ -5,7 +5,7 @@ Helm Cart for json2hat tool (To import cncf/gitdm GitHub_users.json affiliations
 
 # Usage
 
-You should set namespace to 'json2hat' first: `./k8s/switch_profile.sh json2hat`.
+You should set namespace to 'json2hat' first: `./switch_namespace.sh json2hat`.
 
 Please provide secret values for each file in `./secrets/*.secret.example` saving it as `./secrets/*.secret` or specify them from the command line.
 
