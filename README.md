@@ -3,7 +3,7 @@
 Helm Cart for json2hat tool (To import cncf/gitdm GitHub_users.json affiliations into LF SortingHat MariaDB database)
 
 
-# usage
+# Usage
 
 You should set namespace to 'json2hat' first: `./k8s/switch_profile.sh json2hat`.
 
