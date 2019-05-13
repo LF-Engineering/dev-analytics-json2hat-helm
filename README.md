@@ -1,6 +1,6 @@
 # json2hat-helm
 
-Helm Cart for json2hat tool (To import cncf/gitdm GitHub_users.json affiliations into LF SortingHat MariaDB database)
+Helm chart for json2hat tool (To import `cncf/gitdm` `github_users.json` affiliations into LF SortingHat MariaDB database)
 
 
 # Usage
@@ -9,7 +9,7 @@ You should set namespace to 'json2hat' first: `./switch_namespace.sh json2hat`.
 
 Please provide secret values for each file in `./secrets/*.secret.example` saving it as `./secrets/*.secret` or specify them from the command line.
 
-Please note that `vi` automatically adds new line to all text files, to remove it run `truncate -s -1` on a saved file.
+Please note that `vim` automatically adds new line to all text files, to remove it run `truncate -s -1` on a saved file.
 
 List of secrets:
 - File `secrets/SH_USER.secret` or --set `shUser=...` setup MariaDB admin user name.
