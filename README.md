@@ -5,8 +5,6 @@ Helm chart for json2hat tool (To import `cncf/gitdm` `github_users.json` affilia
 
 # Usage
 
-You should set namespace to 'json2hat' first: `./switch_namespace.sh json2hat`.
-
 Please provide secret values for each file in `./secrets/*.secret.example` saving it as `./secrets/*.secret` or specify them from the command line.
 
 Please note that `vim` automatically adds new line to all text files, to remove it run `truncate -s -1` on a saved file.
@@ -18,8 +16,14 @@ List of secrets:
 - File `secrets/SH_PASS.secret` or --set `shPass=...` setup MariaDB password.
 - File `secrets/SH_DB.secret` or --set `shDB=...` setup MariaDB database.
 
+To install:
+- `helm install ./json2hat-helm --name json2hat`.
+
+To upgrade:
+- `helm upgrade json2hat ./json2hat-helm`.
+
 You can install only selected templates, see `values.yaml` for detalis (refer to `skipXYZ` variables in comments), example:
-- `helm install --dry-run --debug ./json2hat-helm --set skipSecrets=1,skipCron=1`.
+- `helm install --dry-run --debug ./json2hat-helm --set skipSecrets=1,skipCron=1,skipNamespace=1 --name json2hat`.
 
 Please note variables commented out in `./json2hat-helm/values.yaml`. You can either uncomment them or pass their values via `--set variable=name`.
 

@@ -9,9 +9,11 @@
 # skipCron (will not create a new cron job, you should set it when cron job is already created, if you want to recreate a cron job, delete the existing one first and do not set this flag)
 # skipSecrets (will not attempt to create secrets, if you want to create new secrets delete current secrets first and do not set this flag)
 # skipSHSecret (will skip creating SH (sorting hat) secret)
+# skipNamespace (will skip jsone2hat namespace creation)
 # skipCron: 1
 # skipSecrets: 1
 # skipSHSecret: 1
+# skipNamespace: 1
 #
 # Other json2hat params (see NOTES.txt):
 # shDSN: 'shuser:shpassword@tcp(shhost:shport)/shdb?charset=utf8'
@@ -38,6 +40,7 @@ importRestartPolicy: Never
 limitsCPU: '1000m'
 limitsMemory: '8Gi'
 name: json2hat
+namespace: 'json2hat'
 nameOverride: json2hat
 requestsCPU: '300m'
 requestsMemory: '1Gi'

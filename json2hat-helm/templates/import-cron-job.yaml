@@ -4,6 +4,7 @@
 apiVersion: batch/v1beta1
 kind: CronJob
 metadata:
+  namespace: '{{ .Values.namespace }}'
   name: '{{ .Values.importPodName }}'
   labels:
     type: 'cron'
