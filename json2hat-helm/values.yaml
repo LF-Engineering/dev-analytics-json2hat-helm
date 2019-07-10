@@ -35,7 +35,7 @@ debugPod: ''
 debugPodName: 'json2hat-debug'
 debugCommand: '/bin/sleep'
 debugCommandArgs: ['36525d']
-debugImage: 'lukaszgryglicki/json2hat'
+debugImage: 'lukaszgryglicki/json2hat-debug'
 fullnameOverride: json2hat
 imagePullPolicy: Always
 importCommand: 'json2hat'

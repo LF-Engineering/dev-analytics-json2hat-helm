@@ -39,3 +39,9 @@ Other environment parameters:
 - `SH_TEST_CONNECT`/`shTestConnect` - set this variable to only test connection.
 - `SH_REMOTE_JSON_PATH`/`shRemoteJSONPath` - remote affiliations JSON path, default: `https://raw.githubusercontent.com/cncf/devstats/master/github_users.json`.
 - `SH_REMOTE_YAML_PATH`/`shRemoteYAMLPath` - remote company acquisitions YAML path, default: `https://raw.githubusercontent.com/cncf/devstats/master/companies.yaml`.
+
+To shell into a SortingHat database pod (when you deployed with `--set debugPod=1`):
+
+- `kubectl exec -it json2hat-debug -n json2hat -- /bin/bash`.
+- `mysql -h $SH_HOST -u $SH_USER -p$SH_PASS $SH_DB`.
+- `show tables;`.
