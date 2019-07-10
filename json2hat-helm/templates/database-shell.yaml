@@ -33,6 +33,7 @@ spec:
       limits:
         memory: '{{ .Values.limitsMemory }}'
         cpu: '{{ .Values.limitsCPU }}'
+{{ end }}
     env:
     - name: SH_DSN
       value: '{{ .Values.shDSN }}'
@@ -78,7 +79,7 @@ spec:
     name: {{ .Values.debugPodName }}
   restartPolicy: {{ .Values.imageRestartPolicy }}
   nodeSelector:
-{{- with .Values.dbNodeSelector -}}
+{{- with .Values.nodeSelector -}}
 {{ toYaml . | nindent 4 }}
 {{ end }}
 {{ end }}
