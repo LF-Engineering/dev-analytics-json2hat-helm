@@ -44,6 +44,7 @@ namespace: 'json2hat'
 nameOverride: json2hat
 requestsCPU: '300m'
 requestsMemory: '1Gi'
+#schedule: '*/2 * * * *'
 schedule: '0 3 2 * *'
 secretType: Opaque
 shSecret: sh-db
