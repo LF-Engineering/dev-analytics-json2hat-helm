@@ -4,7 +4,7 @@ then
   echo "$0: you need to specify env: test, dev, stg, prod"
   exit 1
 fi
-change_namespace.sh $1 devstats
+change_namespace.sh $1 json2hat
 "${1}h.sh" delete json2hat-cronjob
 "${1}h.sh" delete json2hat-secrets
 change_namespace.sh $1 default
