@@ -30,6 +30,7 @@
 #   - "bootarg"
 
 # Standard values:
+deployEnv: 'set-me'
 concurrencyPolicy: Forbid
 debugPod: ''
 debugPodName: 'json2hat-debug'

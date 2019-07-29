@@ -17,14 +17,14 @@ List of secrets:
 - File `secrets/SH_DB.secret` or --set `shDB=...` setup MariaDB database.
 
 To install:
-- `helm install ./json2hat-helm --name json2hat`.
+- `helm install json2hat ./json2hat-helm --set deployEnv=test`.
 
 To upgrade:
 - `helm upgrade json2hat ./json2hat-helm`.
 
 You can install only selected templates, see `values.yaml` for detalis (refer to `skipXYZ` variables in comments), example:
-- `helm install --dry-run --debug ./json2hat-helm --set skipSecrets=1,skipCron=1,skipNamespace=1 --name json2hat`.
-- `helm install --dry-run --debug ./json2hat-helm --set debugPod=1 --name json2hat-debug`.
+- `helm install --dry-run --debug --generate-name ./json2hat-helm --set deployEnv=test,skipSecrets=1,skipCron=1,skipNamespace=1`.
+- `helm install --dry-run --debug json2hat-debug ./json2hat-helm --set debugPod=1`.
 
 Please note variables commented out in `./json2hat-helm/values.yaml`. You can either uncomment them or pass their values via `--set variable=name`.
 
