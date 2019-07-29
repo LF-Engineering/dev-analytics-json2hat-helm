@@ -5,5 +5,7 @@ then
   exit 1
 fi
 change_namespace.sh $1 devstats
+"${1}h.sh" delete json2hat-cronjob
+"${1}h.sh" delete json2hat-secrets
 change_namespace.sh $1 default
 "${1}h.sh" delete json2hat-namespace
