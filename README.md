@@ -11,9 +11,9 @@ Please note that `vim` automatically adds new line to all text files, to remove 
 
 List of secrets:
 - File `secrets/SH_USER.secret` or --set `shUser=...` setup MariaDB admin user name.
-- File `secrets/SH_HOST.secret` or --set `shHost=...` setup MariaDB host name.
+- File `secrets/SH_HOST.env.secret` or --set `shHost=...` setup MariaDB host name.
 - File `secrets/SH_PORT.secret` or --set `shPort=...` setup MariaDB port.
-- File `secrets/SH_PASS.secret` or --set `shPass=...` setup MariaDB password.
+- File `secrets/SH_PASS.env.secret` or --set `shPass=...` setup MariaDB password.
 - File `secrets/SH_DB.secret` or --set `shDB=...` setup MariaDB database.
 
 To install:
