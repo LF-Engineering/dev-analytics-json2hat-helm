@@ -21,8 +21,8 @@
 # shParams: '?charset=utf8'
 # shCleanup: 1
 # shTestConnect: 1
-# shRemoteJSONPath: 'https://raw.githubusercontent.com/cncf/devstats/master/github_users.json'
-# shRemoteYAMLPath: 'https://raw.githubusercontent.com/cncf/devstats/master/companies.yaml'
+# shRemoteJSONPath: 'https://github.com/cncf/devstats/raw/master/github_users.json'
+# shRemoteYAMLPath: 'https://github.com/cncf/devstats/raw/master/companies.yaml'
 #
 # Other evrironment options:
 # schedule: '36 * * * *'

@@ -37,8 +37,8 @@ Other environment parameters:
 - `SH_PARAMS`/`shParams` - additional parameters that can be specified via `?param1=value1&param2=value2&...&paramN=valueN`, defaults to `?charset=utf8`. You can use `SH_PARAMS='-'` to specify empty params.
 - `SH_CLEANUP`/`shCleanup` - to cleanup existing company affiliations (delete from `organizations` and `enrollments` tables).
 - `SH_TEST_CONNECT`/`shTestConnect` - set this variable to only test connection.
-- `SH_REMOTE_JSON_PATH`/`shRemoteJSONPath` - remote affiliations JSON path, default: `https://raw.githubusercontent.com/cncf/devstats/master/github_users.json`.
-- `SH_REMOTE_YAML_PATH`/`shRemoteYAMLPath` - remote company acquisitions YAML path, default: `https://raw.githubusercontent.com/cncf/devstats/master/companies.yaml`.
+- `SH_REMOTE_JSON_PATH`/`shRemoteJSONPath` - remote affiliations JSON path, default: `https://github.com/cncf/devstats/raw/master/github_users.json`.
+- `SH_REMOTE_YAML_PATH`/`shRemoteYAMLPath` - remote company acquisitions YAML path, default: `https://github.com/cncf/devstats/raw/master/companies.yaml`.
 
 To shell into a SortingHat database pod (when you deployed with `--set debugPod=1`):
 
