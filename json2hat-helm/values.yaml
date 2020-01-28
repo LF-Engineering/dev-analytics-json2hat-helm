@@ -51,7 +51,7 @@ nameOverride: json2hat
 requestsCPU: '300m'
 requestsMemory: '1Gi'
 #schedule: '*/2 * * * *'
-schedule: '1 1 * * *'
+schedule: '0 1 * * 0'
 secretType: Opaque
 shSecret: sh-db
 useResourcesLimits: 1
