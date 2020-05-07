@@ -15,6 +15,7 @@ List of secrets:
 - File `secrets/SH_PORT.secret` or --set `shPort=...` setup MariaDB port.
 - File `secrets/SH_PASS.env.secret` or --set `shPass=...` setup MariaDB password.
 - File `secrets/SH_DB.secret` or --set `shDB=...` setup MariaDB database.
+- File `secrets/SYNC_URL.secret` or --set `syncUrl=...` setup sync URL address.
 
 To install:
 - `helm install json2hat ./json2hat-helm --set deployEnv=test`.

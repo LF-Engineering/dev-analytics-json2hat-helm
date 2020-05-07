@@ -4,6 +4,7 @@
 # shPort: ''
 # shPass: ''
 # shDB: ''
+# syncUrl: ''
 #
 # You can skip some parts of the deployment (useful when deploying partailly again)
 # skipCron (will not create a new cron job, you should set it when cron job is already created, if you want to recreate a cron job, delete the existing one first and do not set this flag)

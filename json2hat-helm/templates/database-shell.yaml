@@ -49,6 +49,11 @@ spec:
       value: '{{ .Values.shRemoteJSONPath }}'
     - name: SH_REMOTE_YAML_PATH
       value: '{{ .Values.shRemoteYAMLPath }}'
+    - name: SYNC_URL
+      valueFrom:
+        secretKeyRef:
+          name: {{ .Values.shSecret }}
+          key: SYNC_URL.secret
     - name: SH_USER
       valueFrom:
         secretKeyRef:
