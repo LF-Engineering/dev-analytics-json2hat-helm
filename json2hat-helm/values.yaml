@@ -52,6 +52,7 @@ requestsCPU: '300m'
 requestsMemory: '1Gi'
 #schedule: '*/2 * * * *'
 schedule: '0 1 * * 0'
+startingDeadlineSeconds: 3600
 secretType: Opaque
 shSecret: sh-db
 useResourcesLimits: 1
