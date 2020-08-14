@@ -40,11 +40,11 @@ debugPod: ''
 debugPodName: 'json2hat-debug'
 debugCommand: '/bin/sleep'
 debugCommandArgs: ['36525d']
-debugImage: 'lukaszgryglicki/json2hat-debug'
+debugImage: 'dajohn/json2hat-debug'
 fullnameOverride: json2hat
 imagePullPolicy: Always
 importCommand: 'json2hat'
-importImage: 'lukaszgryglicki/json2hat'
+importImage: 'dajohn/json2hat'
 importPodName: json2hat
 importRestartPolicy: Never
 limitsCPU: '1000m'
