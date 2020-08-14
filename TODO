@@ -1,0 +1,1 @@
+Add support for: ES_URL, REPO_ACCESS and NO_PROFILE_UPADTE env vars (just like in dev-analytics-json2hat).

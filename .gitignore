@@ -42,7 +42,6 @@ out
 .DS_Store
 temp.sql
 drop.sql
-/TODO
 /MAIL
 /wip.sql
 /log
