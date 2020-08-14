@@ -49,6 +49,8 @@ spec:
       value: '{{ .Values.shRemoteJSONPath }}'
     - name: SH_REMOTE_YAML_PATH
       value: '{{ .Values.shRemoteYAMLPath }}'
+    - name: NO_PROFILE_UPDATE
+      value: '{{ .Values.noProfileUpdate }}'
     - name: SYNC_URL
       valueFrom:
         secretKeyRef:
@@ -79,6 +81,16 @@ spec:
         secretKeyRef:
           name: {{ .Values.shSecret }}
           key: SH_DB.secret
+    - name: ES_URL
+      valueFrom:
+        secretKeyRef:
+          name: {{ .Values.shSecret }}
+          key: ES_URL.secret
+    - name: REPO_ACCESS
+      valueFrom:
+        secretKeyRef:
+          name: {{ .Values.shSecret }}
+          key: REPO_ACCESS.secret
     image: {{ .Values.debugImage }}
     imagePullPolicy: {{ .Values.imagePullPolicy }}
     name: {{ .Values.debugPodName }}

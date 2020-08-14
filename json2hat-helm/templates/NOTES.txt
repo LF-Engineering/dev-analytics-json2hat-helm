@@ -7,6 +7,8 @@ List of secrets:
 - File `secrets/SH_PASS.env.secret` or --set `shPass=...` setup MariaDB password.
 - File `secrets/SH_DB.secret` or --set `shDB=...` setup MariaDB database.
 - File `secrets/SYNC_URL.secret` or --set `syncUrl=...` setup sync URL address.
+- File `secrets/ES_URL.env.secret` or --set `esUrl=...` setup ElasticSearch address.
+- File `secrets/REPO_ACCESS.secret` or --set `repoAccess=...` setup access to DA API private repo address `https://username:oauth_key@github.com/LF-Engineering/dev-analytics-api`.
 
 To install:
 - `helm install json2hat ./json2hat-helm --set deployEnv=test`.
