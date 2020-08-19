@@ -69,6 +69,8 @@ spec:
               value: '{{ .Values.shRemoteYAMLPath }}'
             - name: NO_PROFILE_UPDATE
               value: '{{ .Values.noProfileUpdate }}'
+            - name: REPLACE
+              value: '{{ .Values.replace }}'
             - name: SYNC_URL
               valueFrom:
                 secretKeyRef:

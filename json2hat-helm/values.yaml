@@ -8,6 +8,7 @@
 # esUrl: ''
 # repoAccess: ''
 # noProfileUpdate: ''
+# replace: ''
 #
 # You can skip some parts of the deployment (useful when deploying partailly again)
 # skipCron (will not create a new cron job, you should set it when cron job is already created, if you want to recreate a cron job, delete the existing one first and do not set this flag)
@@ -55,6 +56,7 @@ nameOverride: json2hat
 requestsCPU: '300m'
 requestsMemory: '1Gi'
 noProfileUpdate: '1'
+replace: ''
 #schedule: '*/2 * * * *'
 schedule: '0 1 * * 0'
 startingDeadlineSeconds: 3600

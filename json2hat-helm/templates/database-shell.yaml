@@ -49,6 +49,8 @@ spec:
       value: '{{ .Values.shRemoteJSONPath }}'
     - name: SH_REMOTE_YAML_PATH
       value: '{{ .Values.shRemoteYAMLPath }}'
+    - name: REPLACE
+      value: '{{ .Values.replace }}'
     - name: NO_PROFILE_UPDATE
       value: '{{ .Values.noProfileUpdate }}'
     - name: SYNC_URL
