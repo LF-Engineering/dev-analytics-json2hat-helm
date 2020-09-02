@@ -71,6 +71,16 @@ spec:
               value: '{{ .Values.noProfileUpdate }}'
             - name: REPLACE
               value: '{{ .Values.replace }}'
+            - name: DRY_RUN
+              value: '{{ .Values.dryRun }}'
+            - name: SKIP_BOTS
+              value: '{{ .Values.skipBots }}'
+            - name: ONLY_GGH_USERNAME
+              value: '{{ .onlyGGHUsername }}'
+            - name: ONLY_GGH_NAME
+              value: '{{ .Values.onlyGGHName }}'
+            - name: NAME_MATCH
+              value: '{{ .Values.nameMatch }}'
             - name: SYNC_URL
               valueFrom:
                 secretKeyRef:

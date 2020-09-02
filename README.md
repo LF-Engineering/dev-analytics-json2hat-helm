@@ -39,6 +39,13 @@ Other environment parameters:
 - `SH_PROTO`/`shProto` - protocol, defaults to `tcp`.
 - `SH_PARAMS`/`shParams` - additional parameters that can be specified via `?param1=value1&param2=value2&...&paramN=valueN`, defaults to `?charset=utf8`. You can use `SH_PARAMS='-'` to specify empty params.
 - `SH_CLEANUP`/`shCleanup` - to cleanup existing company affiliations (delete from `organizations` and `enrollments` tables).
+- `DRY_RUN`/`dryRun` - to execute in dry-run mode.
+- `SKIP_BOTS`/`skipBots` - do not mark bot users.
+- `NO_PROFILE_UPDATE`/`noProfileUpdate` - do not update profile data (country etc.), default is '1', so you need to clear it to enable profile updates.
+- `REPLACE`/`replace` - for each profile/project first delete existing affiliations and then add. Default is '1', so you need to clear it to disable.
+- `ONLY_GGH_USERNAME`/`onlyGGHUsername` - match usernames only for git or GitHub usernames, default is '1', clear it to match by all datasources usernames.
+- `ONLY_GGH_NAME`/`onlyGGHName` - match names only for git or GitHub names. If you specify this, only names from git and GitHub will be matched.
+- `NAME_MATCH`/`nameMatch` - specify how to match using name: 0 - do not match using name, 1 - match only when single hit, 2 - match on multiple hits, default is 1.
 - `SH_TEST_CONNECT`/`shTestConnect` - set this variable to only test connection.
 - `SH_REMOTE_JSON_PATH`/`shRemoteJSONPath` - remote affiliations JSON path, default: `https://github.com/cncf/devstats/raw/master/github_users.json`.
 - `SH_REMOTE_YAML_PATH`/`shRemoteYAMLPath` - remote company acquisitions YAML path, default: `https://github.com/cncf/devstats/raw/master/companies.yaml`.

@@ -9,6 +9,10 @@
 # repoAccess: ''
 # noProfileUpdate: ''
 # replace: ''
+# onlyGGHUsername: ''
+# onlyGGHName: 1
+# nameMatch: 0
+# nameMatch: 2
 #
 # You can skip some parts of the deployment (useful when deploying partailly again)
 # skipCron (will not create a new cron job, you should set it when cron job is already created, if you want to recreate a cron job, delete the existing one first and do not set this flag)
@@ -25,6 +29,8 @@
 # shProto: tcp
 # shParams: '?charset=utf8'
 # shCleanup: 1
+# skipBots: 1
+# dryRun: 1
 # shTestConnect: 1
 # shRemoteJSONPath: 'https://github.com/cncf/devstats/raw/master/github_users.json'
 # shRemoteYAMLPath: 'https://github.com/cncf/devstats/raw/master/companies.yaml'
@@ -56,7 +62,14 @@ nameOverride: json2hat
 requestsCPU: '300m'
 requestsMemory: '1Gi'
 noProfileUpdate: '1'
-replace: ''
+shCleanup: ''
+skipBots: ''
+dryRun: ''
+shTestConnect: ''
+replace: '1'
+onlyGGHUsername: 1
+onlyGGHName: ''
+nameMatch: 1
 #schedule: '*/2 * * * *'
 schedule: '0 1 * * 0'
 startingDeadlineSeconds: 3600
