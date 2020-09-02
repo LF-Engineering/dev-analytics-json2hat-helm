@@ -70,8 +70,9 @@ replace: '1'
 onlyGGHUsername: 1
 onlyGGHName: ''
 nameMatch: 1
+schedule: '0 7 7,21 * *'
 #schedule: '*/2 * * * *'
-schedule: '0 1 * * 0'
+#schedule: '0 1 * * 0'
 startingDeadlineSeconds: 3600
 secretType: Opaque
 shSecret: sh-db
